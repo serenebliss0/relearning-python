@@ -1,0 +1,16 @@
+# Python Relearning Repository - Requirements
+# 
+# This file lists the Python dependencies for all practice files and projects
+# in this repository.
+#
+# Install with: pip install -r requirements.txt
+
+# Currently, all practice files use Python standard library only
+# No external dependencies required for basic learning!
+
+# Future dependencies for projects (uncomment when needed):
+# openai>=1.0.0              # For AI integration
+# requests>=2.31.0           # For HTTP requests
+# python-dotenv>=1.0.0       # For environment variables
+
+# Add more dependencies as you progress and build more complex projects!
