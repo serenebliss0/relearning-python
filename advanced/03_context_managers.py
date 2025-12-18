@@ -8,6 +8,8 @@ This file covers context managers in Python:
 - Practical context manager examples
 """
 
+import os
+import sys
 import time
 from contextlib import contextmanager
 
@@ -172,7 +174,6 @@ print("=== State Management Context Manager ===")
 @contextmanager
 def change_directory(path):
     """Temporarily change working directory"""
-    import os
     original_dir = os.getcwd()
     print(f"Changing directory from {original_dir} to {path}")
     
@@ -185,7 +186,6 @@ def change_directory(path):
         print(f"Restored directory to {original_dir}")
 
 # Example usage
-import os
 current_dir = os.getcwd()
 print(f"Current directory: {current_dir}")
 
@@ -234,13 +234,11 @@ class SuppressOutput:
     """Context manager to suppress print output"""
     
     def __enter__(self):
-        import sys
         self.original_stdout = sys.stdout
         sys.stdout = None
         return self
     
     def __exit__(self, exc_type, exc_val, exc_tb):
-        import sys
         sys.stdout = self.original_stdout
         return False
 
@@ -267,7 +265,6 @@ with timing_context("Data Processing"):
     print("Processing data...")
 
 # Cleanup temporary files
-import os
 for filename in ["temp_context.txt", "temp_file1.txt", "temp_file2.txt"]:
     try:
         os.remove(filename)

@@ -11,6 +11,7 @@ This file covers file operations in Python:
 
 import os
 import json
+from datetime import datetime
 
 # ============================================================================
 # WRITING TO FILES
@@ -120,7 +121,6 @@ print("=== Practice Exercises ===")
 # Exercise 1: Create a simple log file
 def write_log(message, filename="temp_files/log.txt"):
     """Append a timestamped message to a log file"""
-    from datetime import datetime
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(filename, "a") as file:
         file.write(f"[{timestamp}] {message}\n")

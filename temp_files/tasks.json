@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "task": "Learn Python basics",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "task": "Practice file handling",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "task": "Build a project",
+    "completed": false
+  }
+]
