@@ -1,0 +1,17 @@
+# SemireGPT Requirements
+# Python dependencies for the project
+
+# Future AI/ML dependencies (uncomment when ready to use)
+# openai>=1.0.0
+# tiktoken>=0.5.0
+# langchain>=0.1.0
+# transformers>=4.30.0
+# torch>=2.0.0
+
+# Utility libraries (uncomment when needed)
+# requests>=2.31.0
+# python-dotenv>=1.0.0
+# pyyaml>=6.0
+
+# For now, this project runs with Python standard library only
+# Add dependencies as you expand the project!
